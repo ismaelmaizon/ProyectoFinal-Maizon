@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2E5D7;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h3 {
+    padding: 50px;
+}
+
+.titulo {
+    margin: 50px 50px;
+    font-size: 100px;
+    background-color: yellowgreen;
+    color: #000;
+}
+
+
+.titulo2 {
+    margin: auto 50px;
+    font-size: 50px;
+}
+
+
+.welcome {
+    margin: auto 50px;
+    font-size: 30px;
+    padding: 50px;
+}
+
+
+
+.properties {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    padding: 15px;
+    color: #F2E5D7;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 100px;
+    height: 200px;
+    border-radius: 15px;
+    border: brown solid 5px ;
+}
+
+
+.container {
+    height: 200px;
+    margin-top: 50px;
+}
+
+
+.busqueda{
+    margin-top: 100px;
+}
