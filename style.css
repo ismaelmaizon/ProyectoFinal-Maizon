@@ -3,78 +3,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-color: #F2E5D7;
-}
 
-a {
-    text-decoration: none;
-}
-
-p {
-    line-height: 1.5;
-}
-
-ul {
-    list-style-type: none;
 }
 
 
-h3 {
-    padding: 50px;
-}
-
-.titulo {
-    margin: 50px 50px;
-    font-size: 100px;
-    background-color: yellowgreen;
-    color: #000;
-}
-
-
-.titulo2 {
-    margin: auto 50px;
-    font-size: 50px;
-}
-
-
-.welcome {
-    margin: auto 50px;
-    font-size: 30px;
-    padding: 50px;
-}
-
-
-
-.properties {
-    margin-top: 50px;
+form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.card{
-    display: flex;
-    padding: 15px;
-    color: #F2E5D7;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    width: 100px;
-    height: 200px;
-    border-radius: 15px;
-    border: brown solid 5px ;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px #000;
 }
 
 
-.container {
-    height: 200px;
-    margin-top: 50px;
+form .title {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #000;
+    margin-right: 10px;
+
 }
 
 
-.busqueda{
-    margin-top: 100px;
+form label input {
+    outline: none;
+    border: none;
+    color: #000;
+    border-bottom: solid 2px #A00;
+    padding: 0 5PX;
+    font-size: 18px;
 }
+
+form label input::placeholder {
+    color: #A00;
+}
+
+
+
+form .link {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+form #button1 {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #A00, #00F);
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form #button2 {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #A00, #00F);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
