@@ -57,7 +57,7 @@ button2.addEventListener('click', (e) => {
 
 
         if (username.value === el.nombre & password.value === el.password) {
-            window.location = "../index.html"
+            window.location = "./pagina/pag1.html"
         } else {
             console.log('no ingresó');
         }

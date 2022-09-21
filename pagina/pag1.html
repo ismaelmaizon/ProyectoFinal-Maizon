@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecoBodereau</title>
+
+    <!-- bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <!-- estilos css -->
+
+    <link rel="stylesheet" href="./pag1.css">
+
+
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav container-max">
+            <h1 class="header__nav-title">DecoBodereau</h1>
+            <ul class="header__nav-list">
+                <li class="header__nav-list-1">Nosotros</li>
+                <li class="header__nav-list-2">Productos</li>
+                <li class="header__nav-list-3">Novedades</li>
+                <li class="header__nav-list-4">Contactos</li>
+                <li>
+                    <div class="header__nav-search">
+                        <form role="search" method="get" class="searchform  wd-style-default search-style-default woodmart-ajax-search">
+                        <input type="text" class="s" placeholder="Search for products" value="" name="s" aria-label="Search" title="Search for products">
+                        <input type="hidden" name="post_type" value="product">
+                        <button type="submit" class="searchsubmit"><span>Search</span></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            
+            
+        </nav>
+    </header>
+    <main>
+        <section class="scroll">
+            <div class="scroll-conten container" >
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../imagenes/This-14-year-old-artist-is-making-rugs-cool-again-1.jpg" class="d-block w-100" alt="..." width="50%" height="800px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>First slide label</h2>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/IMG-20220522-WA0010.jpg" class="d-block w-100" alt="..." width="50%" height="800px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>Second slide label</h2>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/IMG-20220719-WA0022.jpg" class="d-block w-100" alt="..." width="50%" height="800px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>Third slide label</h2>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+        <section class="bien_venida container-max">
+            <div>
+                <h1>Hola bien venidos a nuestra web site</h1>
+                <h3>¿Queres saber sobre nuestros productos?</h3>
+            </div>
+            
+        </section>
+
+        <!-- Tarjetas -->
+        <section class="tarj">
+
+            <div class="tarj__title">
+                <div>
+                    <h2>Nuestros Productos!!!</h2>
+                </div>
+            </div>
+
+            <section class="busqueda">
+                <div>
+                    <h2>Busqueda</h2>
+                </div>    
+                <div class="inputs">
+                    <select name="producto" id="input1">
+                        <option value="" disabled selected>Seleccione el Producto</option>
+                        <option value="Puerta" id="input1">Puerta</option>
+                        <option value="Silla" id="input1">Silla</option>
+                        <option value="Alfombra" id="input1">Alfombra</option>
+                    </select>
+                    <label for="input2">precios menores a: </label>
+                    <input id="input2" type="text">
+                    <button id="search">Buscar</button>
+                </div>
+            </section>
+
+            <div id="articulo4" class="tarj__grid"></div>
+            
+
+            <div id="articulo1" class="tarj__grid">
+               
+            </div>
+
+            <div id="articulo2" class="tarj__grid"></div>
+            <div id="articulo3" class="tarj__grid"></div>
+            
+        </section>
+
+        <section class="Contactanos"></section>
+        <section class="Redes"></section>
+    </main>
+    <footer></footer>
+    <script src="./pag1.js"></script>
+</body>
+</html>
