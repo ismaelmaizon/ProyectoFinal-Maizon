@@ -2,7 +2,7 @@
 // Objetos sillas
 
 function Sillas(material, tipo, precio, img) {
-    this.material =material;
+    this.material = material;
     this.tipo = tipo;
     this.precio = precio;
     this.imagen = img;
@@ -54,6 +54,7 @@ const AlfombrasLana4 = new Alfombras('lana', 'Internas', 11000, 'IMG-20220818-WA
 const alfom = [AlfombrasLana1, AlfombrasLana2, AlfombrasLana3, AlfombrasLana4]
 const sill = [Sillas1, Sillas2, Sillas3, Sillas4]
 const puert = [PuertasMadera1, PuertasMadera2, PuertasMadera3, PuertasMadera4]
+const carrito = []
 
 
 //constantes
@@ -162,15 +163,12 @@ for (const alfombra of alfom) {
 const search = document.querySelector("#search");
 
 
-// se llama filtrar precio pero en realidad filtra material por el momento
 function filtrarPreciosMenores(arr, filtro) {
     const filtrado = arr.filter((el)=>{
         return el.precio <= filtro;
     });
     return filtrado;
 }
-
-
 
 
 
@@ -182,6 +180,31 @@ search.addEventListener("click", ()=>{
 
 
     if (input1 == "silla" ) {
+
+        let timerInterval
+        Swal.fire({
+        title: 'Buscando!',
+        html: 'esto puede tardar unos segundos.',
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+        })
+
+
         console.log("sillas");
         let resultado = filtrarPreciosMenores(sill, input2)
         console.log(resultado);
@@ -217,6 +240,33 @@ search.addEventListener("click", ()=>{
         }
 
     } else if (input1 == "puerta") {
+
+        let timerInterval
+        Swal.fire({
+        title: 'Buscando!',
+        html: 'esto puede tardar unos segundos.',
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+        })
+
+
+
+
         console.log("puertas");
         let resultado = filtrarPreciosMenores(puert, input2)
         console.log(resultado);
@@ -250,6 +300,30 @@ search.addEventListener("click", ()=>{
             art4.append(articulo);
         }
     } else {
+
+
+        let timerInterval
+        Swal.fire({
+        title: 'Buscando!',
+        html: 'esto puede tardar unos segundos.',
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+        })
 
         console.log("alfombras");
         let resultado = filtrarPreciosMenores(alfom, input2)

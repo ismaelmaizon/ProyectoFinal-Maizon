@@ -57,9 +57,21 @@ button2.addEventListener('click', (e) => {
 
 
         if (username.value === el.nombre & password.value === el.password) {
-            window.location = "./pagina/pag1.html"
+            Swal.fire({
+                icon: 'success',
+                title: 'Bien venido',
+                text: 'esperamos que lo disfrutes',
+                footer: '<a href="./pagina/pag1.html">Ir a la Pagina</a>'
+            })
+
+            //window.location = "./pagina/pag1.html"
         } else {
-            console.log('no ingresó');
+            Swal.fire({
+                icon: 'error',
+                title: 'Datos no Correctos',
+                text: 'porfavor ingrese de nuevo sus datos',
+                footer: '<a href="./index.html">Intentar de nuevo</a>'
+              })
         }
     }
 
