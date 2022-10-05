@@ -1,0 +1,26 @@
+[
+    {
+       "material":"lana",
+       "tipo":"Antigua",
+       "precio":5000,
+       "imagen":"IMG-20220522-WA0023.jpg"
+    },
+    {
+       "material":"lana",
+       "tipo":"Moderna",
+       "precio":13500,
+       "imagen":"IMG-20220719-WA0032.jpg"
+    },
+    {
+       "material":"lana",
+       "tipo":"Exterior",
+       "precio":5300,
+       "imagen":"IMG-20220818-WA0008.jpg"
+    },
+    {
+       "material":"lana",
+       "tipo":"Internas",
+       "precio":11000,
+       "imagen":"IMG-20220818-WA0010.jpg"
+    }
+ ]

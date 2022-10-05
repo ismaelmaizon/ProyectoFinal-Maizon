@@ -1,0 +1,26 @@
+[
+    {
+       "material":"madera",
+       "tipo":"Antigua",
+       "precio":50000,
+       "imagen":"110-home_default.jpg"
+    },
+    {
+       "material":"metal",
+       "tipo":"Moderna",
+       "precio":14000,
+       "imagen":"111-home_default.jpg"
+    },
+    {
+       "material":"plastico",
+       "tipo":"Exterior",
+       "precio":53000,
+       "imagen":"medvidcedro-300x300.jpg"
+    },
+    {
+       "material":"madera",
+       "tipo":"Interna",
+       "precio":10000,
+       "imagen":"101-home_default.jpg"
+    }
+ ]
