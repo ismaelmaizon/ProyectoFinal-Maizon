@@ -1,0 +1,98 @@
+[
+    {  
+       "id": 1, 
+       "Elemento": "silla",
+       "material":"madera",
+       "tipo":"Antigua",
+       "precio":5200,
+       "imagen":"IMG-20220218-WA0023.jpg"
+    },
+    {
+        "id": 2, 
+       "Elemento": "silla",
+       "material":"madera",
+       "tipo":"Moderna",
+       "precio":14000,
+       "imagen":"IMG-20220718-WA0025.jpg"
+    },
+    {
+        "id": 3, 
+       "Elemento": "silla",
+       "material":"madera",
+       "tipo":"Escritorio",
+       "precio":5900,
+       "imagen":"IMG-20220719-WA0022 (1).jpg"
+    },
+    {
+        "id": 4, 
+       "Elemento": "silla",
+       "material":"madera",
+       "tipo":"Gamer",
+       "precio":13000,
+       "imagen":"IMG-20220719-WA0030.jpg"
+    },
+    {
+        "id": 5, 
+        "Elemento": "puerta",
+        "material":"madera",
+        "tipo":"Antigua",
+        "precio":50000,
+        "imagen":"110-home_default.jpg"
+    },
+    {
+        "id": 6, 
+       "Elemento": "puerta",
+        "material":"metal",
+        "tipo":"Moderna",
+        "precio":14000,
+        "imagen":"111-home_default.jpg"
+    },
+    {
+        "id": 7, 
+        "Elemento": "puerta",
+        "material":"plastico",
+        "tipo":"Exterior",
+        "precio":53000,
+        "imagen":"medvidcedro-300x300.jpg"
+    },
+    {
+        "id": 8, 
+        "Elemento": "puerta",
+        "material":"madera",
+        "tipo":"Interna",
+        "precio":10000,
+        "imagen":"101-home_default.jpg"
+    },
+    { 
+        "id": 9, 
+        "Elemento": "alfombra", 
+       "material":"lana",
+       "tipo":"Antigua",
+       "precio":5000,
+       "imagen":"IMG-20220522-WA0023.jpg"
+    },
+    {
+        "id": 10, 
+        "Elemento": "alfombra",
+       "material":"lana",
+       "tipo":"Moderna",
+       "precio":13500,
+       "imagen":"IMG-20220719-WA0032.jpg"
+    },
+    {
+        "id": 11, 
+        "Elemento": "alfombra",
+       "material":"lana",
+       "tipo":"Exterior",
+       "precio":5300,
+       "imagen":"IMG-20220818-WA0008.jpg"
+    },
+    {
+       "id": 12, 
+       "Elemento": "alfombra",
+       "material":"lana",
+       "tipo":"Internas",
+       "precio":11000,
+       "imagen":"IMG-20220818-WA0010.jpg"
+    }
+ ]

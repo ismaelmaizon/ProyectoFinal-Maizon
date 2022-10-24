@@ -20,7 +20,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: #000;
     text-align: center;
     padding: 20px 25px;
     box-shadow: 0 5px 10px #000;
@@ -28,7 +28,7 @@ form {
 
 
 form .title {
-    color: #000;
+    color: #fff;
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 30px;
@@ -40,7 +40,7 @@ form label {
 
 form label .fa-solid {
     font-size: 20px;
-    color: #000;
+    color: #fff;
     margin-right: 10px;
 
 }
@@ -62,7 +62,7 @@ form label input::placeholder {
 
 
 form .link {
-    color: #000;
+    color: #fff;
     margin-bottom: 15px;
 }
 

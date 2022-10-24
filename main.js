@@ -1,4 +1,12 @@
 
+
+Swal.fire(`¡HOLA!
+Para ingresar primero debe registrarse y luego hacer click en ingresar`)
+
+
+
+
+
 const username = document.getElementById('username');
 const password = document.getElementById('password');
 const button1 = document.getElementById('button1');
@@ -26,6 +34,8 @@ function informacion(nombre, password) {
 button1.addEventListener('click', (e) => {
     e.preventDefault();
 
+    Swal.fire('Regristro completo')
+
     const nuevoUsuario = new informacion(username.value, password.value);
     usuarios.push(nuevoUsuario);
                     
@@ -43,6 +53,7 @@ button2.addEventListener('click', (e) => {
     console.log(info);
     
     for (const element of info) {
+        
 
         const info2 = new informacion(element.nombre, element.password)
 
@@ -59,7 +70,7 @@ button2.addEventListener('click', (e) => {
         if (username.value === el.nombre & password.value === el.password) {
             window.location = "./pagina/pag1.html"
         } else {
-            console.log('no ingresó');
+            Swal.fire('Usuario o password no reconocidos')
         }
     }
 
