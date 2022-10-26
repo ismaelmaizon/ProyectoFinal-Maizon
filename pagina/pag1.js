@@ -172,7 +172,7 @@ function renderCarrito(){
                     <h2>Producto: ${prod.Elemento}</h2>
                     <h3>Precio: ${prod.precio}</h3>
                     <h3>Cantidad: ${prod.cantidad}</h3>
-                    <button id="borrar${prod.id}" class="borrar">Eliminiar</button>
+                    <button id="borrar${prod.id}" class="borrar">Eliminar</button>
                 </div>
                 <div class="carrito_div_imag">
                     <img src="../imagenes/tarjetas/${prod.imagen}" width="200px" height="300px">
